@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-8">
+    <h1 class="header"><span class="accent-word-3">Welcome: </span>to Blocipedia</h1>
+    <h1><span class="accent-word-2">Log in</span></h1><hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field form-group">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, class:'form-control', placeholder:'Enter email' %>
+    </div>
+  
+    <div class="field form-group">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off", class:'form-control', placeholder:'Enter your password' %>
+    </div>
+  
+    <% if devise_mapping.rememberable? -%>
+      <div class="field form-group">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me, class:'form-check-input', type:'chekcbox' %>
+      </div>
+    <% end -%>
+  
+    <div class="actions">
+      <%= f.submit "Log in", class:'my-btn', type:'submit' %>
+    </div>
+  <% end %><br/>
+  
+  <%= render "devise/shared/links" %>
+  </div>
+</div>
+

@@ -29,11 +29,16 @@ body {
 }
 
 span.accent-word-1 {
- color:#C67B52;
+ color: #C67B52;
+ clear: float;
 }
 
 span.accent-word-2 {
  color:#4B8C8A;
+}
+
+span.accent-word-3 {
+ color: #38353A;
 }
 
 .my-btn {
@@ -52,9 +57,30 @@ span.accent-word-2 {
  border: 2px solid #C67B52;
  text-decoration: none;
  padding: 12px 18px;
- color:#fff;
+ color:#EEEBE7;
  background-color: #C67B52;
 }
+
+.my-btn-danger {
+ border-radius: 4px;
+ border: 2px solid #9E1111;
+ color:#9E1111;
+ text-decoration: none;
+ padding: 12px 18px;
+ background-color: transparent;
+ transition: all .3s;
+}
+
+.my-btn-danger:hover {
+ border-radius: 4px;
+ border: 2px solid #9E1111;
+ color:#EEEBE7;
+ text-decoration: none;
+ padding: 12px 18px;
+ background-color: #9E1111;
+ transition: all .3s;
+}
+
 
 #sign-in-nav {
  margin-top: 25px;
@@ -83,4 +109,13 @@ a {
 a:hover {
  color:#C67B52;
  text-decoration: none;
+}
+hr {
+ border-bottom: 10px dotted #EEEBE7;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ width: 10%;
+ float :left;
+ 
 }
