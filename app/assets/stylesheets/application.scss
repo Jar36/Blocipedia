@@ -15,3 +15,60 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome";
+ 
+h1.header {
+    font-family: 'Special Elite', cursive;
+    color: #C67B52;
+    font-size: 5rem;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color:#97938B;
+}
+
+span.accent-word-1 {
+ color:#C67B52;
+}
+
+span.accent-word-2 {
+ color:#4B8C8A;
+}
+
+.my-btn {
+ border-radius: 4px;
+ border: 2px solid #C67B52;
+ color:#C67B52;
+ text-decoration: none;
+ padding: 12px 18px;
+ background-color: transparent;
+ transition: all .3s;
+}
+
+
+.my-btn:hover {
+ border-radius: 4px;
+ border: 2px solid #C67B52;
+ text-decoration: none;
+ padding: 12px 18px;
+ color:#fff;
+ background-color: #C67B52;
+}
+
+ul li {
+ 
+ margin-top:20px;
+ list-style:none;
+}
+
+ul li a {
+ color:#4B8C8A;
+ text-decoration: none;
+ transition: all .3s;
+}
+
+ul li a:hover {
+ color:#C67B52;
+ text-decoration: none;
+}
