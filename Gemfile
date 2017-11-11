@@ -32,9 +32,10 @@ source 'https://rubygems.org'
  gem 'turbolinks', '~> 5'
  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
  gem 'jbuilder', '~> 2.5'
- 
+ gem 'bootstrap-sass'
  gem 'thor', '0.19.1'
  
  group :development do
    gem 'listen', '~> 3.0.5'
  end
+ gem 'font-awesome-rails'
