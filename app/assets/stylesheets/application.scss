@@ -56,19 +56,31 @@ span.accent-word-2 {
  background-color: #C67B52;
 }
 
-ul li {
- 
- margin-top:20px;
- list-style:none;
+#sign-in-nav {
+ margin-top: 25px;
 }
 
-ul li a {
+ul li {
+ list-style: none;
+ display: inline;
+}
+
+a.navbar-link {
  color:#4B8C8A;
- text-decoration: none;
  transition: all .3s;
 }
 
-ul li a:hover {
+a.navbar-link:hover {
+ color:#C67B52;
+ text-decoration: none;
+}
+
+a {
+ color:#4B8C8A;
+ transition: all .3s;
+}
+
+a:hover {
  color:#C67B52;
  text-decoration: none;
 }

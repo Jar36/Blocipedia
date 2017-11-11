@@ -39,3 +39,4 @@ source 'https://rubygems.org'
    gem 'listen', '~> 3.0.5'
  end
  gem 'font-awesome-rails'
+ gem 'devise'
