@@ -3,27 +3,41 @@
         <div class="col-md-12">
             <h1 class="header display-1"><span class="accent-word-3">Blocipedia:</span> Social, Markdown Wikis</h1>
         </div>
+    </div>
     
-        <div class="col-md-12 align-items-center">
-            <div class="cta-box">
-                <h4 class="lead cta-text"><span class="accent-word-2">Create</span> and share Markdown Wikis</h4>
-                <%= link_to "Sign Up", new_user_registration_path, class:'my-btn'  %>
-                
+    <div class="row justify-content-center cta-box">
+        
+        <div class="col-md-12 cta">
+            <h2 class="lead cta-text"><span class="accent-word-2">Create</span> and share Markdown Wikis</h2>
+        </div> 
+        <div class="buttons">
+            <div class="col-md-4"></div>
+            <div class="col-md-2">
+                <%= link_to "Sign Up", new_user_registration_path, class:'btn my-btn' %>
             </div>
+            <div class="col-md-2">
+                <%= link_to "Ugrade!", new_user_registration_path, class:'btn my-btn-upgrade' %>
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
     
-    <div class="row id="plans">
+        
+    
+    
+    <div class="row" id="plans">
         <div class="col-md-2"></div>
         <div class="col-md-4 plans">
-            <p>Create as many <span class="accent-word-1">public</span> wikis as you want!</p>
-            <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i>
             <p class="lead">Free Plan</p>
+            <p>Create as many <span class="accent-word-1">public</span> wikis as you want!</p>
+            <i class="fa fa-thumbs-o-up fa-4x" id="thumbs-up" aria-hidden="true"></i>
+            
         </div>
         <div class="col-md-4 plans">
-            <p>Create as many <span class="accent-word-1">private</span> wikis as you want!</p>
-            <i class="fa fa-money fa-5x" aria-hidden="true"></i>
             <p class="lead">Premium Plan</p>
+            <p>Create as many <span class="accent-word-1">private</span> wikis as you want!</p>
+            <i class="fa fa-money fa-4x" id="money" aria-hidden="true"></i>
+            
         </div>
         <div class="col-md-2"></div>
     </div>

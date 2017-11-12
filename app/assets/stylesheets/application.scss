@@ -20,12 +20,18 @@
 h1.header {
     font-family: 'Special Elite', cursive;
     color: #C67B52;
-    font-size: 5rem;
+    font-size: 3.5em;
 }
 
-body {
+
+body.bg {
     font-family: 'Oswald', sans-serif;
     color:#97938B;
+    background-color: #EEEBE7;
+    background-image: url(asset-path('cubes.png'));
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
 }
 
 span.accent-word-1 {
@@ -49,8 +55,8 @@ span.accent-word-3 {
  padding: 12px 18px;
  background-color: transparent;
  transition: all .3s;
+ margin: 0 10px 0 0;
 }
-
 
 .my-btn:hover {
  border-radius: 4px;
@@ -60,6 +66,27 @@ span.accent-word-3 {
  color:#EEEBE7;
  background-color: #C67B52;
 }
+
+.my-btn-upgrade {
+ border-radius: 4px;
+ border: 2px solid #4B8C8A;
+ color:#4B8C8A;
+ text-decoration: none;
+ padding: 12px 18px;
+ background-color: transparent;
+ transition: all .3s;
+ 
+}
+
+.my-btn-upgrade:hover {
+ border-radius: 4px;
+ border: 2px solid #4B8C8A;
+ text-decoration: none;
+ padding: 12px 18px;
+ color:#EEEBE7;
+ background-color: #4B8C8A;
+}
+
 
 .my-btn-danger {
  border-radius: 4px;
