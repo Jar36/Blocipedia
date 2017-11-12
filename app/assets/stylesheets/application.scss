@@ -109,9 +109,46 @@ span.accent-word-3 {
  transition: all .3s;
 }
 
+#top-nav{
+ margin-top: 15px;
+}
 
 #sign-in-nav {
- margin-top: 25px;
+ margin-top: 15px;
+}
+
+.nav-pills > li.active > a {
+ color: #EEEBE7;
+ background-color: #c67b52;
+}
+
+.nav-pills > li.active > a:hover {
+ color: #C67B52;
+ background-color: #38353A;
+}
+
+.nav-pills > li > a:hover {
+  color: #C67B52;
+  background-color: #38353A;
+}
+
+.dropdown-menu {
+  color: #C67B52;
+  background-color: #38353A;
+}
+
+a.dropdown-toggle:focus {
+   color: #38353A;
+}
+
+.dropdown-menu li a {
+ color: #C67B52;
+}
+
+.dropdown-menu li a:hover {
+ text-decoration: none;
+ color: #4b8c8a;
+ background-color: rgba(255, 255, 255, 0.15);
 }
 
 ul li {
