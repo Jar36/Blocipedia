@@ -55,10 +55,30 @@ span.accent-word-3 {
  padding: 12px 18px;
  background-color: transparent;
  transition: all .3s;
- margin: 0 10px 10px 0;
+ 
 }
 
 .my-btn:hover {
+ border-radius: 4px;
+ border: 2px solid #C67B52;
+ text-decoration: none;
+ padding: 12px 18px;
+ color:#EEEBE7;
+ background-color: #C67B52;
+}
+
+.my-btn-sign-up {
+ border-radius: 4px;
+ border: 2px solid #C67B52;
+ color:#C67B52;
+ text-decoration: none;
+ padding: 12px 18px;
+ background-color: transparent;
+ transition: all .3s;
+ float:right;
+}
+
+.my-btn-sign-up:hover {
  border-radius: 4px;
  border: 2px solid #C67B52;
  text-decoration: none;
@@ -75,7 +95,7 @@ span.accent-word-3 {
  padding: 12px 18px;
  background-color: transparent;
  transition: all .3s;
- margin: 0 20px 0 10px;
+ float:left;
  
 }
 

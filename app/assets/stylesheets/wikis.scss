@@ -1,3 +1,9 @@
 // Place all the styles related to the Wikis controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.list-group .wiki-box {
+  border-radius: 4px;
+   box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px 2px #565656;
+}
