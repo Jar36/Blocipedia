@@ -1,6 +1,18 @@
 // Place all the styles related to the Wikis controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wiki-module{
+ margin: 50px auto;
+ max-width: 60%;
+}
+
+h1.wiki-header {
+    font-family: 'Special Elite', cursive;
+    color: #38353A;
+    font-size: 2.5em;
+}
+
 .list-group .wiki-box {
   border-radius: 4px;
    box-sizing: border-box;

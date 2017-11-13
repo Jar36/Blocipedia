@@ -7,7 +7,7 @@
 }
 
 .row.cta-box {
-    width: 50%;
+    max-width: 50%;
     margin: 50px auto;
     box-sizing: border-box;
     border-radius: 4px;
@@ -24,8 +24,14 @@ h2.lead.cta-text {
     
 }
 
-hr.hlead{
-    border:2px dotted #eee;
+#buttons {
+    max-width: 40%;
+    margin: 10px auto;
+}
+
+#plans {
+    max-width: 50%;
+    margin: auto;
 }
 
 i {
@@ -50,8 +56,24 @@ i#money {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
     .row.cta-box {
-        width: 100%;
+        max-width: 80%;
+        
+    }
+    
+    .cta-btns {
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row.cta-box {
+        max-width: 100%;
+        
+    }
+    
+    .cta-btns {
+        margin: 5px 0;
     }
 }

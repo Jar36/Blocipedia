@@ -1,20 +1,30 @@
-<h1>All Wikis</h1>
 
 <% @wikis.each do |wiki| %>
     <p><%= link_to wiki.title, wiki_path(wiki.id) %></p>
 <% end %>
-
-
-<div class="container">
+<div class="container wiki-module">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1 class="panel-title">Wikis</h1>
+            <h1 class="wiki-header">Wiki title:</h1>
         </div>
         <div class="panel-body">
-            Panel content
+            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a> <a href="#"><span class="pull-right" style="color:#9E1111;"><i class="fa fa-trash-o" style="color:#9E1111;" aria-hidden="true"></i> Delete</a></span>
+        </div>
+        
+        <div class="panel-heading">
+            <h1 class="wiki-header">Wiki title:</h1>
+        </div>
+        <div class="panel-body">
+            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a> <a href="#"><span class="pull-right" style="color:#9E1111;"><i class="fa fa-trash-o" style="color:#9E1111;" aria-hidden="true"></i> Delete</a></span>
+        </div>
+        
+        <div class="panel-heading">
+            <h1 class="wiki-header">Wiki title:</h1>
+        </div>
+        <div class="panel-body">
+            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a> <a href="#"><span class="pull-right" style="color:#9E1111;"><i class="fa fa-trash-o" style="color:#9E1111;" aria-hidden="true"></i> Delete</a></span>
         </div>
     </div>
-    
 </div>
 
 
@@ -25,4 +35,3 @@
 
 
 
-<span class="pull-right"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a> <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></span>
