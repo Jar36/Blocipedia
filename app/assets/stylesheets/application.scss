@@ -18,20 +18,20 @@
  @import "font-awesome";
  
 h1.header {
-    font-family: 'Special Elite', cursive;
-    color: #C67B52;
-    font-size: 3.5em;
+ font-family: 'Special Elite', cursive;
+ color: #C67B52;
+ font-size: 3.5em;
 }
 
 
 body.bg {
-    font-family: 'Oswald', sans-serif;
-    color:#97938B;
-    background-color: #EEEBE7;
-    background-image: url(asset-path('cubes.png'));
-    background-size: auto;
-    background-repeat: repeat;
-    background-position: center;
+ font-family: 'Oswald', sans-serif;
+ color:#97938B;
+ background-color: #EEEBE7;
+ background-image: url(asset-path('cubes.png'));
+ background-size: auto;
+ background-repeat: repeat;
+ background-position: center;
 }
 
 span.accent-word-1 {
@@ -52,19 +52,20 @@ span.accent-word-3 {
  border: 2px solid #C67B52;
  color:#C67B52;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  background-color: transparent;
  transition: all .3s;
- 
+ text-transform: uppercase;
 }
 
 .my-btn:hover {
  border-radius: 4px;
  border: 2px solid #C67B52;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  color:#EEEBE7;
  background-color: #C67B52;
+ text-transform: uppercase;
 }
 
 .my-btn-sign-up {
@@ -72,9 +73,10 @@ span.accent-word-3 {
  border: 2px solid #C67B52;
  color:#C67B52;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  background-color: transparent;
  transition: all .3s;
+ text-transform: uppercase;
  //float:right;
 }
 
@@ -82,9 +84,10 @@ span.accent-word-3 {
  border-radius: 4px;
  border: 2px solid #C67B52;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  color:#EEEBE7;
  background-color: #C67B52;
+ text-transform: uppercase;
 }
 
 .my-btn-upgrade {
@@ -92,9 +95,10 @@ span.accent-word-3 {
  border: 2px solid #4B8C8A;
  color:#4B8C8A;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  background-color: transparent;
  transition: all .3s;
+ text-transform: uppercase;
 // float:left;
  
 }
@@ -103,9 +107,10 @@ span.accent-word-3 {
  border-radius: 4px;
  border: 2px solid #4B8C8A;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  color:#EEEBE7;
  background-color: #4B8C8A;
+ text-transform: uppercase;
 }
 
 
@@ -114,9 +119,10 @@ span.accent-word-3 {
  border: 2px solid #9E1111;
  color:#9E1111;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  background-color: transparent;
  transition: all .3s;
+ text-transform: uppercase;
 }
 
 .my-btn-danger:hover {
@@ -124,9 +130,10 @@ span.accent-word-3 {
  border: 2px solid #9E1111;
  color:#EEEBE7;
  text-decoration: none;
- padding: 12px 18px;
+ padding: 10px 24px;
  background-color: #9E1111;
  transition: all .3s;
+ text-transform: uppercase;
 }
 
 #top-nav{
@@ -148,17 +155,17 @@ span.accent-word-3 {
 }
 
 .nav-pills > li > a:hover {
-  color: #C67B52;
-  background-color: #38353A;
+ color: #C67B52;
+ background-color: #38353A;
 }
 
 .dropdown-menu {
-  color: #C67B52;
-  background-color: #38353A;
+ color: #C67B52;
+ background-color: #38353A;
 }
 
 a.dropdown-toggle:focus {
-   color: #38353A;
+ color: #38353A;
 }
 
 .dropdown-menu li a {
@@ -195,6 +202,7 @@ a:hover {
  color:#C67B52;
  text-decoration: none;
 }
+
 hr {
  border-bottom: 10px dotted #EEEBE7;
  border-top: none;

@@ -1,2 +1,19 @@
-<h1>Wikis#new</h1>
-<p>Find me in app/views/wikis/new.html.erb</p>
+<h2 class="wiki-header"><i class="fa fa-pencil" aria-hidden="true"></i> Create a Wiki</h2>
+ 
+ <div class="row">
+   
+   <div class="col-md-8">
+     <%= form_for @wiki do |f| %>
+       <div class="form-group">
+         <%= f.label :title %>
+         <%= f.text_field :title, class: 'form-control', placeholder: "Enter a wiki title..." %>
+       </div>
+       <div class="form-group">
+         <%= f.label :body %>
+         <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter your wiki text here..." %>
+       </div>
+       
+       <%= f.submit "Save", class: 'btn my-btn' %>
+     <% end %>
+   </div>
+ </div>

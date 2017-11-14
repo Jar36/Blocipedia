@@ -2,20 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.wiki-module{
+.wiki-module {
  margin: 50px auto;
  max-width: 70%;
 }
 
-.wiki-header {
+h2.wiki-header {
  font-family: 'Special Elite', cursive;
- color: #38353A;
+ color: #4B8C8A;
  // font-size: 2.5em;
 }
 
-.list-group .wiki-box {
-  border-radius: 4px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  box-shadow: 0px 4px 15px 2px #565656;
+.wiki-module .panel {
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)!important;
 }
+
+.wiki-btn {
+ margin: 0 auto;
+ text-transform: uppercase;
+}
+
+.btn-block {
+ margin: 10px auto;
+ text-transform: uppercase;
+}
+
+//..............................................................................................................................
+//.MMMMMM...MMMMMM.................dddd.iiii...................QQQQQQQ................................iiii......................
+//.MMMMMM...MMMMMM.................dddd.iiii.................QQQQQQQQQQ...............................iiii......................
+//.MMMMMM...MMMMMM.................dddd.....................QQQQQQQQQQQQ........................................................
+//.MMMMMMM.MMMMMMM..eeeeee....ddddddddd.iiii..aaaaaa........QQQQQ..QQQQQ.Quuu..uuuuu..eeeeee..errrrrrriiii..eeeeee...sssssss....
+//.MMMMMMM.MMMMMMM.eeeeeeee..dddddddddd.iiii.aaaaaaaa...... QQQQ.....QQQQQuuu..uuuuu.eeeeeeee.errrrrrriiii.eeeeeeee.essssssss...
+//.MMMMMMM.MMMMMMMeeee.eeee.edddd.ddddd.iiiiiaaa.aaaaa..... QQQ......QQQQQuuu..uuuuuueee.eeee.errrr...iiiiieee.eeee.esss.ssss...
+//.MMMMMMMMMMMMMMMeeee..eeeeeddd...dddd.iiii....aaaaaa..... QQQ......QQQQQuuu..uuuuuueee..eeeeerrr....iiiiieee..eeeeessss.......
+//.MMMMMMMMMMMMMMMeeeeeeeeeeeddd...dddd.iiii.aaaaaaaaa..... QQQ..QQQ.QQQQQuuu..uuuuuueeeeeeeeeerrr....iiiiieeeeeeeee.ssssss.....
+//.MMMMMMMMMMMMMMMeeeeeeeeeeeddd...dddd.iiiiiaaaaaaaaa..... QQQQ.QQQQQQQQQuuu..uuuuuueeeeeeeeeerrr....iiiiieeeeeeeee..sssssss...
+//.MMMM.MMMMM.MMMMeeee......eddd...dddd.iiiiiaaa.aaaaa......QQQQQ.QQQQQQ.Quuu..uuuuuueee......errr....iiiiieee............ssss..
+//.MMMM.MMMMM.MMMMeeee..eeeeedddd.ddddd.iiiiiaaa.aaaaa......QQQQQQQQQQQQ.Quuuu.uuuuuueee..eeeeerrr....iiiiieee..eeeeesss..ssss..
+//.MMMM.MMMMM.MMMM.eeeeeeee..dddddddddd.iiiiiaaaaaaaaa.......QQQQQQQQQQQ..uuuuuuuuuu.eeeeeeee.errr....iiii.eeeeeeee.essssssss...
+//.MMMM.MMMMM.MMMM..eeeeee....ddddddddd.iiii.aaaaaaaaa.........QQQQQQQQQQ..uuuuuuuuu..eeeeee..errr....iiii..eeeeee....ssssss....
+//....................................................................QQQ.......................................................
+//..............................................................................................................................
+
+@media only screen and (max-width: 1024px) {
+    .wiki-module {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wiki-module {
+        max-width: 100%;
+    }
+}
+
