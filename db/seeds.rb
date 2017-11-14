@@ -3,6 +3,7 @@ require 'random_data'
  # Create an admin user
  admin = User.create!(
    email:    'admin@example.com',
+   password: 'helloworld'
  )
 
 # Create a member
@@ -11,7 +12,7 @@ require 'random_data'
    password: 'helloworld'
  )
 
-users = Users.all
+users = User.all
 
  # Create Wikis
  
@@ -19,7 +20,7 @@ users = Users.all
    Wiki.create!(
      title:  RandomData.random_sentence,
      body:   RandomData.random_paragraph,
-     users: users.sample
+     user: users.sample
    )
  end
 

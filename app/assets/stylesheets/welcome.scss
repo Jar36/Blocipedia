@@ -34,6 +34,17 @@ h2.lead.cta-text {
     margin: auto;
 }
 
+.icon-box {
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    border: 4px solid #4b8c8a;
+    border-radius: 100%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
 i {
     color:#4B8C8A;
     margin: 20px auto;
@@ -42,19 +53,36 @@ i {
 
 i#thumbs-up {
     font-size: 3em;
-    border: 4px solid #4b8c8a;
-    padding: 21px 26px;
-    border-radius: 100%;
-    box-sizing: border-box;
+   // border: 4px solid #4b8c8a;
+   // padding: 21px 26px;
+   // border-radius: 100%;
+   // box-sizing: border-box;
 }
 
 i#money {
     font-size: 3em;
-    border: 4px solid #4b8c8a;
-    padding: 21px 20px;
-    border-radius: 100%;
-    box-sizing: border-box;
+   // border: 4px solid #4b8c8a;
+   // padding: 21px 20px;
+   // border-radius: 100%;
+   // box-sizing: border-box;
 }
+
+//..............................................................................................................................
+//.MMMMMM...MMMMMM.................dddd.iiii...................QQQQQQQ................................iiii......................
+//.MMMMMM...MMMMMM.................dddd.iiii.................QQQQQQQQQQ...............................iiii......................
+//.MMMMMM...MMMMMM.................dddd.....................QQQQQQQQQQQQ........................................................
+//.MMMMMMM.MMMMMMM..eeeeee....ddddddddd.iiii..aaaaaa........QQQQQ..QQQQQ.Quuu..uuuuu..eeeeee..errrrrrriiii..eeeeee...sssssss....
+//.MMMMMMM.MMMMMMM.eeeeeeee..dddddddddd.iiii.aaaaaaaa...... QQQQ.....QQQQQuuu..uuuuu.eeeeeeee.errrrrrriiii.eeeeeeee.essssssss...
+//.MMMMMMM.MMMMMMMeeee.eeee.edddd.ddddd.iiiiiaaa.aaaaa..... QQQ......QQQQQuuu..uuuuuueee.eeee.errrr...iiiiieee.eeee.esss.ssss...
+//.MMMMMMMMMMMMMMMeeee..eeeeeddd...dddd.iiii....aaaaaa..... QQQ......QQQQQuuu..uuuuuueee..eeeeerrr....iiiiieee..eeeeessss.......
+//.MMMMMMMMMMMMMMMeeeeeeeeeeeddd...dddd.iiii.aaaaaaaaa..... QQQ..QQQ.QQQQQuuu..uuuuuueeeeeeeeeerrr....iiiiieeeeeeeee.ssssss.....
+//.MMMMMMMMMMMMMMMeeeeeeeeeeeddd...dddd.iiiiiaaaaaaaaa..... QQQQ.QQQQQQQQQuuu..uuuuuueeeeeeeeeerrr....iiiiieeeeeeeee..sssssss...
+//.MMMM.MMMMM.MMMMeeee......eddd...dddd.iiiiiaaa.aaaaa......QQQQQ.QQQQQQ.Quuu..uuuuuueee......errr....iiiiieee............ssss..
+//.MMMM.MMMMM.MMMMeeee..eeeeedddd.ddddd.iiiiiaaa.aaaaa......QQQQQQQQQQQQ.Quuuu.uuuuuueee..eeeeerrr....iiiiieee..eeeeesss..ssss..
+//.MMMM.MMMMM.MMMM.eeeeeeee..dddddddddd.iiiiiaaaaaaaaa.......QQQQQQQQQQQ..uuuuuuuuuu.eeeeeeee.errr....iiii.eeeeeeee.essssssss...
+//.MMMM.MMMMM.MMMM..eeeeee....ddddddddd.iiii.aaaaaaaaa.........QQQQQQQQQQ..uuuuuuuuu..eeeeee..errr....iiii..eeeeee....ssssss....
+//....................................................................QQQ.......................................................
+//..............................................................................................................................
 
 @media only screen and (max-width: 1024px) {
     .row.cta-box {
