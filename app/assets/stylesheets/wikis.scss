@@ -27,6 +27,27 @@ h2.wiki-header {
  text-transform: uppercase;
 }
 
+.wiki-my-btn {
+ background-color: #38353A;
+ border-radius: 4px;
+ border: 2px solid #38353A;
+ color: #C67B52;
+ text-decoration: none;
+ padding: 10px 24px;
+ transition: all .3s;
+}
+
+.wiki-my-btn:hover {
+ background-color: #C67B52;
+ border-radius: 4px;
+ border: 2px solid #C67B52;
+ color: #EEEBE7;
+ text-decoration: none;
+ padding: 10px 24px;
+ transition: all .3s;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
 //..............................................................................................................................
 //.MMMMMM...MMMMMM.................dddd.iiii...................QQQQQQQ................................iiii......................
 //.MMMMMM...MMMMMM.................dddd.iiii.................QQQQQQQQQQ...............................iiii......................

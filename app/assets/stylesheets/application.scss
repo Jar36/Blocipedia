@@ -66,6 +66,7 @@ span.accent-word-3 {
  color:#EEEBE7;
  background-color: #C67B52;
  text-transform: uppercase;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .my-btn-sign-up {
@@ -134,6 +135,7 @@ span.accent-word-3 {
  background-color: #9E1111;
  transition: all .3s;
  text-transform: uppercase;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 #top-nav{
@@ -152,11 +154,19 @@ span.accent-word-3 {
 .nav-pills > li.active > a:hover {
  color: #C67B52;
  background-color: #38353A;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.nav-pills > li.active > a:focus {
+ color: #C67B52;
+ background-color: #38353A;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .nav-pills > li > a:hover {
  color: #C67B52;
  background-color: #38353A;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-menu {
