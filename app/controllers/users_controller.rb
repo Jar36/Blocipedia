@@ -1,20 +1,18 @@
 class UsersController < ApplicationController
-  def new
-    @user = User.new
-  end
+  before_filter :authenticate_user!
   
-  def create 
-    
+  def index
+    @user = User.all
   end
   
   def show 
-   
+   @user = User.find(params[:id])
   end
   
-  def update
-    @user = User.find(params[:id])
-    @user.toggle!(:admin)
-    flash[:success] = 'OK!'
-    redirect_to root_path
+  def destory 
+    user = User.find(params[:id])
+    user.destroy
+    redirect_to users_path, :notice => "User deleted"
   end
+  
 end
