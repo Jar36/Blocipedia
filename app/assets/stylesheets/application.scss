@@ -226,10 +226,8 @@ ul.dropdown-menu.pull-right {
      right: 0;
      left: 0;
      top: 50px;
-     text-align: center;
      font-size: 2em;
   }
-
 
 //..............................................................................................................................
 //.MMMMMM...MMMMMM.................dddd.iiii...................QQQQQQQ................................iiii......................
@@ -248,20 +246,15 @@ ul.dropdown-menu.pull-right {
 //....................................................................QQQ.......................................................
 //..............................................................................................................................
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .standard-menu {
    display: none;
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 769px) {
 
   .mobile-menu {
    display: none;
   }
-  
-  
-  
-  
- 
 }

@@ -13,7 +13,7 @@
    
     <div class="container standard-menu">
       <ul class="nav nav-pills" id="top-nav">
-        <li role="presentation" class=''><%= link_to "Home", root_path %></li>
+        <li role="presentation"><%= link_to "Home", root_path %></li>
         <li role="presentation"class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
           Wikis <span class="caret"></span>
@@ -29,10 +29,11 @@
 
         <ul class="pull-right" id="sign-in-nav">
           <% if user_signed_in? %>
-            <i class="fa fa-user-circle" aria-hidden="true"></i> <%= link_to current_user.email, edit_user_registration_path, :class => 'navbar-link' %> - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <li><i class="fa fa-user-circle" aria-hidden="true"></i> <%= link_to current_user.email, edit_user_registration_path, :class => 'navbar-link' %></li> - 
+            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> <i class="fa fa-sign-out" aria-hidden="true"></i></li>
           <% else %>
-            <i class="fa fa-user-circle" aria-hidden="true"></i> <li><%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link'  %> -</li>
-            <li><%= link_to "Log In", new_user_session_path, :class => 'navbar-link'  %></li> <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <li><i class="fa fa-user-circle" aria-hidden="true"></i> <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link' %> - </li>
+            <li><%= link_to "Log In", new_user_session_path, :class => 'navbar-link'  %> <i class="fa fa-sign-in" aria-hidden="true"></i></li> 
           <% end %>
         </ul>
       </ul>
@@ -44,12 +45,18 @@
            <i class="fa fa-bars fa-2x pull-right" aria-hidden="true"></i> 
           </a>
           <ul class="dropdown-menu pull-right">
-              <li><%= link_to 'All Wikis', wikis_path %></li>
-              <li><a href="#">My Wikis</a></li>
-              <li><a href="#">Private Wikis</a></li>
+            <li role="presentation"><%= link_to "Home", root_path %></li>
+            <li><%= link_to 'All Wikis', wikis_path %></li>
+            <li><a href="#">My Wikis</a></li>
+            <li><a href="#">Private Wikis</a></li>
+            <% if user_signed_in? %>
+              <li><%= link_to current_user.email, edit_user_registration_path, :class => 'navbar-link' %></li><li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> </li>
+            <% else %>
+              <li><%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link' %></li>
+              <li><%= link_to "Log In", new_user_session_path, :class => 'navbar-link' %></li> 
+            <% end %>
           </ul>
       </div>
-      
     </div>
     
     <div class="container text-center">
