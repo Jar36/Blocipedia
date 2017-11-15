@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   # get 'wikis/edit'
   
   resources :wikis
-  resources :users
   devise_for :users
   root 'welcome#index'
   # get 'welcome/index'
