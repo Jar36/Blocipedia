@@ -17,6 +17,7 @@
  @import "bootstrap";
  @import "font-awesome";
  
+
 h1.header {
  font-family: 'Special Elite', cursive;
  color: #C67B52;
@@ -78,7 +79,6 @@ span.accent-word-3 {
  background-color: transparent;
  transition: all .3s;
  text-transform: uppercase;
- //float:right;
 }
 
 .my-btn-sign-up:hover {
@@ -100,8 +100,6 @@ span.accent-word-3 {
  background-color: transparent;
  transition: all .3s;
  text-transform: uppercase;
-// float:left;
- 
 }
 
 .my-btn-upgrade:hover {
@@ -142,8 +140,9 @@ span.accent-word-3 {
  margin-top: 15px;
 }
 
+
 #sign-in-nav {
- margin-top: 15px;
+ margin-top: -5px;
 }
 
 .nav-pills > li.active > a {
@@ -220,5 +219,47 @@ hr {
  border-right: none;
  width: 10%;
  float :left;
+ 
+}
+
+ul.dropdown-menu.pull-right {
+     right: 0;
+     left: 0;
+     top: 50px;
+     text-align: center;
+     font-size: 2em;
+  }
+
+
+//..............................................................................................................................
+//.MMMMMM...MMMMMM.................dddd.iiii...................QQQQQQQ................................iiii......................
+//.MMMMMM...MMMMMM.................dddd.iiii.................QQQQQQQQQQ...............................iiii......................
+//.MMMMMM...MMMMMM.................dddd.....................QQQQQQQQQQQQ........................................................
+//.MMMMMMM.MMMMMMM..eeeeee....ddddddddd.iiii..aaaaaa........QQQQQ..QQQQQ.Quuu..uuuuu..eeeeee..errrrrrriiii..eeeeee...sssssss....
+//.MMMMMMM.MMMMMMM.eeeeeeee..dddddddddd.iiii.aaaaaaaa...... QQQQ.....QQQQQuuu..uuuuu.eeeeeeee.errrrrrriiii.eeeeeeee.essssssss...
+//.MMMMMMM.MMMMMMMeeee.eeee.edddd.ddddd.iiiiiaaa.aaaaa..... QQQ......QQQQQuuu..uuuuuueee.eeee.errrr...iiiiieee.eeee.esss.ssss...
+//.MMMMMMMMMMMMMMMeeee..eeeeeddd...dddd.iiii....aaaaaa..... QQQ......QQQQQuuu..uuuuuueee..eeeeerrr....iiiiieee..eeeeessss.......
+//.MMMMMMMMMMMMMMMeeeeeeeeeeeddd...dddd.iiii.aaaaaaaaa..... QQQ..QQQ.QQQQQuuu..uuuuuueeeeeeeeeerrr....iiiiieeeeeeeee.ssssss.....
+//.MMMMMMMMMMMMMMMeeeeeeeeeeeddd...dddd.iiiiiaaaaaaaaa..... QQQQ.QQQQQQQQQuuu..uuuuuueeeeeeeeeerrr....iiiiieeeeeeeee..sssssss...
+//.MMMM.MMMMM.MMMMeeee......eddd...dddd.iiiiiaaa.aaaaa......QQQQQ.QQQQQQ.Quuu..uuuuuueee......errr....iiiiieee............ssss..
+//.MMMM.MMMMM.MMMMeeee..eeeeedddd.ddddd.iiiiiaaa.aaaaa......QQQQQQQQQQQQ.Quuuu.uuuuuueee..eeeeerrr....iiiiieee..eeeeesss..ssss..
+//.MMMM.MMMMM.MMMM.eeeeeeee..dddddddddd.iiiiiaaaaaaaaa.......QQQQQQQQQQQ..uuuuuuuuuu.eeeeeeee.errr....iiii.eeeeeeee.essssssss...
+//.MMMM.MMMMM.MMMM..eeeeee....ddddddddd.iiii.aaaaaaaaa.........QQQQQQQQQQ..uuuuuuuuu..eeeeee..errr....iiii..eeeeee....ssssss....
+//....................................................................QQQ.......................................................
+//..............................................................................................................................
+
+@media only screen and (max-width: 1024px) {
+  .standard-menu {
+   display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .mobile-menu {
+   display: none;
+  }
+  
+  
  
 }

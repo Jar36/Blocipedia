@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # get 'wikis/edit'
   
   resources :wikis
+  resources :users, only: [:update]
 
   devise_for :users
  

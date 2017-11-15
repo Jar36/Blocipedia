@@ -10,7 +10,7 @@
   </head>
 
   <body class="bg">
-    <div class="container">
+    <div class="container standard-menu">
       <ul class="nav nav-pills" id="top-nav">
         <li role="presentation" class='active'><%= link_to "Home", root_path %></li>
         <li role="presentation"class="dropdown">
@@ -28,14 +28,27 @@
 
         <ul class="pull-right" id="sign-in-nav">
           <% if user_signed_in? %>
-            Signed in as: <strong><%= current_user.email %></strong> |
-            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+            <i class="fa fa-user-circle" aria-hidden="true"></i> <%= link_to current_user.email, edit_user_registration_path, :class => 'navbar-link' %> - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> <i class="fa fa-sign-out" aria-hidden="true"></i>
           <% else %>
             <li><%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link'  %> -</li>
             <li><%= link_to "Log In", new_user_session_path, :class => 'navbar-link'  %></li>
           <% end %>
         </ul>
       </ul>
+    </div>
+    
+    <div class="container mobile-menu">
+      <div role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-bars fa-2x pull-right" aria-hidden="true"></i> 
+          </a>
+          <ul class="dropdown-menu pull-right">
+              <li><%= link_to 'All Wikis', wikis_path %></li>
+              <li><a href="#">My Wikis</a></li>
+              <li><a href="#">Private Wikis</a></li>
+          </ul>
+      </div>
+      
     </div>
     
     <div class="container text-center">
