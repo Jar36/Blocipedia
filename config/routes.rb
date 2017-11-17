@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  # get 'charges/index'
+
+  # get 'charges/show'
+
+  # get 'charges/new'
+
+  # get 'charges/edit'
+
   # get 'wikis/index'
 
   # get 'wikis/show'
@@ -6,7 +14,7 @@ Rails.application.routes.draw do
   # get 'wikis/new'
 
   # get 'wikis/edit'
-  
+  resources :charges, only: [:new, :create]
   resources :wikis
   devise_for :users
   root 'welcome#index'
