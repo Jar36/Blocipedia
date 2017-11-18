@@ -22,6 +22,7 @@ h1.header {
  font-family: 'Special Elite', cursive;
  color: #C67B52;
  font-size: 3.5em;
+ letter-spacing: 1.5px;
 }
 
 
@@ -33,6 +34,7 @@ body.bg {
  background-size: auto;
  background-repeat: repeat;
  background-position: center;
+ letter-spacing: .8px;
 }
 
 span.accent-word-1 {
@@ -213,7 +215,7 @@ a:hover {
 }
 
 hr {
- border-bottom: 10px dotted #EEEBE7;
+ border-bottom: 10px dotted #C67B52;
  border-top: none;
  border-left: none;
  border-right: none;
