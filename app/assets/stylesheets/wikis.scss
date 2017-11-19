@@ -11,11 +11,29 @@ h2.wiki-header {
  font-family: 'Special Elite', cursive;
  color: #4B8C8A;
  letter-spacing: 1.5px;
+ margin:auto;
  // font-size: 2.5em;
 }
 
 .wiki-module .panel {
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)!important;
+}
+
+form#new_wiki {
+ background: #38353a;
+ box-shadow: 0px 5px 25px 2px #38353a;
+ padding: 50px;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+
+div#edit-wiki {
+ margin-top: 50px;
+ background: #38353a;
+ box-shadow: 0px 5px 25px 2px #38353a;
+ padding: 50px;
+ border-radius: 4px;
+ box-sizing: border-box;
 }
 
 .wiki-btn {
