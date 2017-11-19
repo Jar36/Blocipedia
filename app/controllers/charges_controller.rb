@@ -1,5 +1,5 @@
 class ChargesController < ApplicationController
-  # require 'stripe'
+  require 'stripe'
   def index
     
   end

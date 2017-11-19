@@ -7,7 +7,7 @@
     <p class="lead">Premium Plan</p>
     <p class="premium-plan">Upgrade now to create as many<br> <span class="accent-word-1">private</span> wikis as you want!</p>
     <%= form_tag charges_path do %>
-      <button class='my-btn'><script class='stripe-button' src="https://checkout.stripe.com/checkout.js" data-key="<%= @stripe_btn_data[:key] %>" data-amount="<%= @stripe_btn_data[:amount] %>" data-description="<%= @stripe_btn_data[:description] %>" ></script></button>
+      <script class='stripe-button' src="https://checkout.stripe.com/checkout.js" data-key="<%= @stripe_btn_data[:key] %>" data-amount="<%= @stripe_btn_data[:amount] %>" data-description="<%= @stripe_btn_data[:description] %>" ></script>
     <% end %>
   </div>
   <div class="col-md-3"></div>
