@@ -6,11 +6,13 @@
     <% @wikis.each do |wiki| %>
         <div class="panel panel-default">
             <div class="panel-heading" id="my-ph-index">
-                <h2 class="wiki-header"><%= link_to wiki.title, wiki_path(wiki.id) %></h2>
+                <h2 class="wiki-header">
+                    <%= link_to wiki.title, wiki_path(wiki.id) %></h2>
                 <small id="wiki-meta">
                     submitted <%= time_ago_in_words(wiki.created_at) %> ago by <%= wiki.user.email %> 
                 </small>
             </div>
+            
             <div class="panel-body" id="my-pb-index">
                 <%= link_to wiki do %> 
                     <i class="fa fa-pencil" aria-hidden="true"></i> Edit
@@ -19,6 +21,7 @@
                     <span class="pull-right" style="color:#9E1111;"><i class="fa fa-trash-o" style="color:#9E1111;" aria-hidden="true"></i> Delete</span>
                 <% end %>
             </div>
+            
         </div>
     <% end %>
 </div>

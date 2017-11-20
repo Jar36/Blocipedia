@@ -9,7 +9,8 @@ require 'faker'
   password: Faker::Internet.password(8)
  )
 end
-  # Create an admin user
+
+ # Create an admin user
   admin = User.create!(
   email: 'jromero45@hotmail.com', # Faker::Internet.email,
   password: '123456789', # Faker::Internet.password(8)
