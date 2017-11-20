@@ -34,7 +34,7 @@ class ChargesController < ApplicationController
    current_user.update_attribute(:role, 'premium')
  
    flash[:notice] = "The payment made by #{current_user.email} was a success. Thank you!"
-   redirect_to wikis_path(current_user) # or wherever
+   redirect_to wikis_path # or wherever
  
    # Stripe will send back CardErrors, with friendly messages
    # when something goes wrong.
