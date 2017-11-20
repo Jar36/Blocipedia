@@ -14,8 +14,12 @@
          <%= f.label :body %>
          <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter your wiki text here..." %>
        </div>
-       
-       <%= f.submit "Save", class: 'btn my-btn' %>
+       <div class="form-group c-box">
+         <%= f.label :private, class: 'checkbox' do %>
+           <%= f.check_box :private %> Private Wiki
+         <% end %>
+       </div>
+       <%= f.submit "Save", class: 'btn my-form-btn' %>
      <% end %>
    </div>
    <div class="col-md-2"></div>

@@ -1,9 +1,11 @@
-<h2 class="wiki-header"><i class="fa fa-pencil" aria-hidden="true"></i> Create a Wiki</h2>
+
  
  <div class="row">
-   
+   <div class="col-md-2"></div>
    <div class="col-md-8">
+    
      <%= form_for @wiki do |f| %>
+     <h2 class="wiki-header"><i class="fa fa-pencil" aria-hidden="true"></i> Create a Wiki</h2>
        <div class="form-group">
          <%= f.label :title %>
          <%= f.text_field :title, class: 'form-control', placeholder: "Enter a wiki title..." %>
@@ -12,12 +14,13 @@
          <%= f.label :body %>
          <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter your wiki text here..." %>
        </div>
-       <div class="form-group">
+       <div class="form-group c-box">
          <%= f.label :private, class: 'checkbox' do %>
            <%= f.check_box :private %> Private Wiki
          <% end %>
        </div>
-       <%= f.submit "Save", class: 'btn my-btn' %>
+       <%= f.submit "Save", class: 'btn my-form-btn' %>
      <% end %>
    </div>
+   <div class="col-md-2"></div>
  </div>

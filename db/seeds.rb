@@ -11,8 +11,9 @@ require 'faker'
 end
   # Create an admin user
   admin = User.create!(
-  email: Faker::Internet.email,
-  password: Faker::Internet.password(8)
+  email: 'jromero45@hotmail.com', # Faker::Internet.email,
+  password: '123456789', # Faker::Internet.password(8)
+  role: 'admin'
  )
 
  users = User.all

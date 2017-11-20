@@ -32,6 +32,7 @@ form#new_wiki {
  padding: 50px;
  border-radius: 4px;
  box-sizing: border-box;
+ margin-top: 50px;
  margin-bottom: 50px;
 }
 
@@ -42,6 +43,7 @@ div#edit-wiki {
  padding: 50px;
  border-radius: 4px;
  box-sizing: border-box;
+ margin-bottom: 50px;
 }
 
 .wiki-btn {
@@ -80,16 +82,23 @@ div#edit-wiki {
  background: #f4f4f4;
 }
 
-#my-ph-index, #my-ph-show {
+#my-ph-index {
  color: #4b8c8a;
  background-color: #ddd;
  border-color: #e0e0e0;
  transition: all 0.4s;
 }
 
-
-#my-ph-index:hover, #my-ph-show:hover {
+#my-ph-index:hover {
  background:#38353A;
+}
+
+#my-ph-show {
+ background:#38353A;
+}
+
+.c-box {
+ margin-left: 20px;
 }
 
 //..............................................................................................................................
