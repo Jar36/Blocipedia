@@ -12,11 +12,14 @@ h2.wiki-header {
  color: #4B8C8A;
  letter-spacing: 1.5px;
  margin :auto;
- // font-size: 2.5em;
+}
+
+h2.wiki-header a:hover {
+ color: #97938B;
 }
 
 #wiki-meta {
- color: #c67b52;;
+ color: #c67b52;
 }
 
 .wiki-module .panel {
@@ -53,17 +56,17 @@ div#edit-wiki {
 
 .wiki-my-btn {
  background-color: #38353A;
- border-radius: 4px;
+ border-radius: 25px;
  border: 2px solid #38353A;
  color: #C67B52;
  text-decoration: none;
  padding: 10px 24px;
+ margin-bottom: 25px;
  transition: all .3s;
 }
 
 .wiki-my-btn:hover {
  background-color: #C67B52;
- border-radius: 4px;
  border: 2px solid #C67B52;
  color: #EEEBE7;
  text-decoration: none;
@@ -72,15 +75,21 @@ div#edit-wiki {
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-#my-pb {
+#my-pb-index, #my-pb-show {
  padding: 0px 15px;
  background: #f4f4f4;
 }
 
-#my-ph {
+#my-ph-index, #my-ph-show {
  color: #4b8c8a;
- background-color: #38353a;
+ background-color: #ddd;
  border-color: #e0e0e0;
+ transition: all 0.4s;
+}
+
+
+#my-ph-index:hover, #my-ph-show:hover {
+ background:#38353A;
 }
 
 //..............................................................................................................................
