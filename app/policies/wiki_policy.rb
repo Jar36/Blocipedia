@@ -11,4 +11,7 @@ class WikiPolicy < ApplicationPolicy
     user.admin? || record.user == user
   end
   
+  def private_wiki?
+  end
+  
 end

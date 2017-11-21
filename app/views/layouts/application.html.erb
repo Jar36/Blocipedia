@@ -40,9 +40,9 @@
               <li class="dropdown-header">Signed in as <%= current_user.email %></li>
               <li><%= link_to 'Edit password', edit_user_registration_path, :class => 'navbar-link' %></li>
               <% if user_is_premium %>
-                <li><%= link_to "Downgrade plan", downgrade_path, data: { confirm: 'Are you sure you want to delete this wiki?' } %></li>
+                <li><%= link_to "Downgrade plan", downgrade_path, data: { confirm: 'Please note that if you downgrade all private wikis will become public. Are you sure?' } %></li>
               <% end %>
-              <% if user_signed_in? %>
+              <% if user_is_not_premium %>
                 <li><%= link_to "Upgrade plan", new_charge_path %></li>
               <% end %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link' %></li>
