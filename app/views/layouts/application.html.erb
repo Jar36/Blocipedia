@@ -3,7 +3,6 @@
   <head>
     <title>Blocipedia</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Oswald|Special+Elite', media: 'all', 'data-turbolinks-track' => true %>
@@ -24,11 +23,41 @@
                 <li><a href="#">Private Wikis</a></li>
               <% end %>
             </ul>
-        
         </li>
         <li role="presentation"><a href="#">Users</a></li>
 
         <ul class="pull-right" id="sign-in-nav">
+        
+        <!-- -->  
+        
+        <% if user_signed_in? %>
+          <li role="presentation"class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user-circle" aria-hidden="true"></i> <span class="caret"></span> 
+              
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-header">Signed in as <%= current_user.email %></li>
+              <li><%= link_to 'Edit password', edit_user_registration_path, :class => 'navbar-link' %></li>
+              <% if user_is_premium %>
+                <li><%= link_to "Downgrade plan", downgrade_path, data: { confirm: 'Are you sure you want to delete this wiki?' } %></li>
+              <% end %>
+              <% if user_signed_in? %>
+                <li><%= link_to "Upgrade plan", new_charge_path %></li>
+              <% end %>
+                <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link' %></li>
+            </ul>
+          </li>
+        <% else %> 
+          <li><i class="fa fa-user-plus" aria-hidden="true"></i> <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link' %> - </li>
+          <li><%= link_to "Log In", new_user_session_path, :class => 'navbar-link'  %> <i class="fa fa-sign-in" aria-hidden="true"></i></li> 
+        <% end %>
+        </ul>
+      </ul>
+    </div>
+          
+        <!-- -->   
+        <!--
           <% if user_signed_in? %>
             <li><i class="fa fa-user-circle" aria-hidden="true"></i> <%= link_to current_user.email, edit_user_registration_path, :class => 'navbar-link' %></li> - 
             <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> <i class="fa fa-sign-out" aria-hidden="true"></i></li>
@@ -39,7 +68,7 @@
         </ul>
       </ul>
     </div>
-    
+    -->
     <div class="container mobile-menu">
       <div role="presentation" class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -83,6 +112,6 @@
        
     <div class="container">
       <%= yield %>
-    </div>
+    </div> 
   </body>
 </html>
