@@ -48,6 +48,7 @@ class ChargesController < ApplicationController
     
     flash[:notice] = "You have successfully downgraded your plan to standard. Remember that all wikis are now public."
     current_user.update_attribute(:role, 'standard')
+    current_user.wikis.update_all(:private => false)
     redirect_to wikis_path
     
   end

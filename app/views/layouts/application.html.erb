@@ -79,8 +79,7 @@
           <% if user_signed_in? %>
             <li class="dropdown-header">Signed in as <%= current_user.email %></li>
             <li role="presentation"><%= link_to "Home", root_path %></li>
-            
-          
+
             <li><%= link_to 'Edit password', edit_user_registration_path, :class => 'navbar-link' %></li>
             <% if user_is_premium %>
                 <li><%= link_to "Downgrade plan", downgrade_path, data: { confirm: 'Please note that if you downgrade all private wikis will become public. Are you sure?' } %></li>

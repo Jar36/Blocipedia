@@ -5,6 +5,7 @@ class WikisController < ApplicationController
 
   def show
     @wiki = Wiki.find(params[:id])
+    
   end
 
   def new
@@ -33,7 +34,7 @@ class WikisController < ApplicationController
     
 
      if @wiki.update(wiki_params)
-        flash[:notice] = "Your wiki was updated."
+       flash[:notice] = "Your wiki was updated."
        redirect_to @wiki
      else
        flash.now[:alert] = "There was an error saving your wiki. Please try again."
