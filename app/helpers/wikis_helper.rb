@@ -6,4 +6,6 @@ module WikisHelper
   def user_is_not_premium
     current_user && current_user.standard?
   end
+  
+  
 end

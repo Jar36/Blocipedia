@@ -1,7 +1,7 @@
 class WikiPolicy < ApplicationPolicy
-  def destroy?
-    user.admin?
-  end
+  # def destroy?
+  #  user.admin?
+  # end
   
   def edit?
     user.admin? || record.user == user

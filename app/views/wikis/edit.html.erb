@@ -1,5 +1,5 @@
  <div class="row">
-   <div class="col-md-2"></div>
+  <div class="col-md-2"></div>
    <div class="col-md-8" id="edit-wiki">
     <h2 class="wiki-header"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Wiki</h2>
      <%= form_for @wiki do |f| %>
@@ -11,8 +11,10 @@
          <%= f.label :body %>
          <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter your wiki text here..." %>
        </div>
+       
        <% if user_is_premium %>
        <div class="form-group c-box">
+        
          <%= f.label :private, class: 'checkbox' do %>
            <%= f.check_box :private %> Private Wiki
          <% end %>
@@ -24,5 +26,4 @@
    <div class="col-md-5 text-center">
      <%= link_to ('<i class="fa fa-arrow-left" aria-hidden="true"></i>').html_safe, wikis_path %> <%= link_to "Back", wikis_path %>
    </div>
-   
  </div>

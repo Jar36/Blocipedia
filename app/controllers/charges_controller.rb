@@ -31,7 +31,7 @@ class ChargesController < ApplicationController
      currency: 'usd'
    )
    
-   current_user.update_attribute(:role, 'premium')
+   current_user.update_attribute(:role, 'premium') # updates the user role attribute according to the downgrade button
  
    flash[:notice] = "The payment made by #{current_user.email} was a success. Thank you!"
    redirect_to wikis_path # or wherever
@@ -45,12 +45,10 @@ class ChargesController < ApplicationController
   end
   
   def downgrade
-    
     flash[:notice] = "You have successfully downgraded your plan to standard. Remember that all wikis are now public."
     current_user.update_attribute(:role, 'standard')
-    current_user.wikis.update_all(:private => false)
+    current_user.wikis.update_all(:private => nil)
     redirect_to wikis_path
-    
   end
   def edit
   end
