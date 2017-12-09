@@ -65,16 +65,14 @@ div#edit-wiki {
  padding: 10px 24px;
  margin-bottom: 25px;
  transition: all .3s;
+ box-shadow: 0px 10px 14px #777777;
 }
 
 .wiki-my-btn:hover {
- background-color: #C67B52;
- border: 2px solid #C67B52;
- color: #EEEBE7;
  text-decoration: none;
  padding: 10px 24px;
  transition: all .3s;
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+ box-shadow: 0 6px 12px #777777;
 }
 
 #my-pb-index, #my-pb-show {

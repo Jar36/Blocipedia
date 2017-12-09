@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'collaborations/new'
+
   resources :charges
   resources :wikis
+  resources :collaborations
   devise_for :users
   root 'welcome#index'
   get 'about' => 'welcome#about'

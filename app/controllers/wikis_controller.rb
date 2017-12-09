@@ -1,7 +1,8 @@
 class WikisController < ApplicationController
   def index
-   # @wikis = Wiki.all
+   #@wikis = Wiki.all.paginate(page: params[:page], per_page: 5)
     @wikis = policy_scope(Wiki)
+   
   end
 
   def show
@@ -15,6 +16,8 @@ class WikisController < ApplicationController
   
   def create 
     @wiki = current_user.wikis.new(wiki_params)
+    @wiki.assign_attributes(wiki_params)
+    authorize @wiki
     
     if @wiki.save
       flash[notice] = "Your wiki was saved successfully."
