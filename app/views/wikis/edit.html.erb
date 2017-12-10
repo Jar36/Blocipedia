@@ -27,15 +27,16 @@
      <%= link_to ('<i class="fa fa-arrow-left" aria-hidden="true"></i>').html_safe, wikis_path %> <%= link_to "Back", wikis_path %>
    </div>
    
-   <div class="form-group">
+   
+    <%= user.email %>
+   
+<div class="form-group">
   <div class="col-md-4">
   </div>
   <% if current_user.premium? || current_user.admin? %>
   <div class="col-md-8">
     <h3>Add Collaborators</h3>
-    <% @users.each do |u| %>
-      <%= u.email %>
-    <% end %>
+  
     <%= form_tag collaborations_path do |f| %>
       <%= hidden_field_tag @wiki_id, @wiki.id %>
       Add Collaborators using their email address
@@ -46,4 +47,9 @@
   </div>
   <% end %>
 </div>
- </div>
+
+
+
+
+
+</div>

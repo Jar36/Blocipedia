@@ -42,7 +42,7 @@ class WikiPolicy < ApplicationPolicy
        wikis = []
        if user.nil?
          wikis = scope.all # if the user is an admin, show them all the wikis
-       elsif user.role == 'premium'
+       elsif user.role == 'premium' || user.role == 'admin'
          all_wikis = scope.all
          all_wikis.each do |wiki|
            if !wiki.private || user = wiki.user || wiki.collaborators.include?(user)
