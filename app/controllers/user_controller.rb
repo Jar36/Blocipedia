@@ -9,10 +9,12 @@ class UsersController < ApplicationController
   end
   
   def index
-    @user = User.find(params[:email])
+    
   end
   
   def show 
    
   end
+  
+  
 end

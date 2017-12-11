@@ -2,6 +2,76 @@
   <div class="col-md-2"></div>
    <div class="col-md-8" id="edit-wiki">
     <h2 class="wiki-header"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Wiki</h2>
+    
+    
+    
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <% if current_user.premium? || current_user.admin? %>
+           <div class="col-md-8">
+            <h3>Add Collaborators</h3>
+            <% @users = User.all %>
+            
+            <% @users.each do |user| %>
+             <%= user.email %><br/>
+            <% end %>
+            
+            <%= form_tag collaborations_path do |f| %>
+             <%= hidden_field_tag @wiki_id, @wiki.id %>
+              Add Collaborators using their email address
+             <%= text_field_tag :email%>  <br>
+             <%= submit_tag "Save Email" %>
+            <% end %>
+          </div>
+         <% end %>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    <% if current_user.premium? || current_user.admin? %>
+    <div class="dropdown" style="margin: 25px 0;">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Add Collaborators
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li class="dropdown-header">Available collaborators</li>
+        <% @users = User.all %>
+        <% @users.each do |user| %>
+         <li><%= link_to user.email %></li>
+        <% end %>
+        
+        
+        
+      </ul>
+    </div>
+    <% end %>
+    
+    
+    
+    
+    
      <%= form_for @wiki do |f| %>
        <div class="form-group">
          <%= f.label :title %>
@@ -21,32 +91,38 @@
        </div>
        <% end %>
        <%= f.submit "Save", class: 'btn my-form-btn' %>
+       <!-- Button trigger modal -->
+        <button type="button" class="btn my-form-btn " data-toggle="modal" data-target="#myModal">
+          Add collaborators
+        </button>
      <% end %>
    </div>
    <div class="col-md-5 text-center">
      <%= link_to ('<i class="fa fa-arrow-left" aria-hidden="true"></i>').html_safe, wikis_path %> <%= link_to "Back", wikis_path %>
    </div>
    
-   
-    <%= user.email %>
-   
-<div class="form-group">
-  <div class="col-md-4">
-  </div>
-  <% if current_user.premium? || current_user.admin? %>
-  <div class="col-md-8">
-    <h3>Add Collaborators</h3>
-  
-    <%= form_tag collaborations_path do |f| %>
-      <%= hidden_field_tag @wiki_id, @wiki.id %>
-      Add Collaborators using their email address
-      <%= text_field_tag :email%>  <br>
 
-      <%= submit_tag "Save Email" %>
-    <% end %>
-  </div>
-  <% end %>
-</div>
+    <div class="form-group">
+      <% if current_user.premium? || current_user.admin? %>
+       <div class="col-md-8">
+        <h3>Add Collaborators</h3>
+        <% @users = User.all %>
+        
+        <% @users.each do |user| %>
+         <%= user.email %><br/>
+        <% end %>
+        
+        <%= form_tag collaborations_path do |f| %>
+         <%= hidden_field_tag @wiki_id, @wiki.id %>
+          Add Collaborators using their email address
+         <%= text_field_tag :email%>  <br>
+         <%= submit_tag "Save Email" %>
+        <% end %>
+      </div>
+     <% end %>
+    </div>
+   
+
 
 
 
