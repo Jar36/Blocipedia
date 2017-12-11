@@ -1,7 +1,8 @@
 class WikisController < ApplicationController
   def index
    #@wikis = Wiki.all.paginate(page: params[:page], per_page: 5)
-    @wikis = policy_scope(Wiki)
+   #@wikis = policy_scope(Wiki)
+    @wikis = current_user.wikis
    
   end
 
@@ -30,7 +31,7 @@ class WikisController < ApplicationController
 
   def edit
     @wiki = Wiki.find(params[:id])
-    authorize(@wiki)
+    # authorize(@wiki)
     
   end
   

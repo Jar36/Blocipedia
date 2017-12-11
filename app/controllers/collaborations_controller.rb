@@ -4,7 +4,7 @@ class CollaborationsController < ApplicationController
   end
   
   def create 
-    @collaborator_user = User.find_by_email(params:[email])
+    @collaborator_user = User.find_by(email: params[:email])
     @wiki = Wiki.find(params[:wiki_id])
     
     if @wiki.collaborations.exists?(user_id: @collaborator_user)
